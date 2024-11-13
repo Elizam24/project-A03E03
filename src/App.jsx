@@ -7,7 +7,7 @@ import './App.css'
 
 function App() {
     const [location, setLocation] = useFetch()
-    const [locationId, setLocationId] = useState()
+    const [locationId, setLocationId] = useState(1)
 
     useEffect(() => {
         setLocation(`https://rickandmortyapi.com/api/location/${locationId}`)
