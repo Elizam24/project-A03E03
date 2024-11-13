@@ -1,0 +1,6 @@
+.card{
+    border: 3px solid red
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat (3,1fr);
+    grid-template-columns:repeat (3,mimax x (300px, 1fr));
+}

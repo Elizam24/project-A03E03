@@ -4,7 +4,7 @@ function CardInfo ({ location }) {
     return (
     <div className='carddInfo'>
       <h2 className='carInfo_title'>{location?.name} </h2>
-      <div classN ame= 'cardInfo_container'>
+      <div className= 'cardInfo_container'>
         <div className="cardInfo_item">
         <h3 className="cardInfo_item-title">Type</h3>
         <p className="cardInfo_item-data">{location?.type}</p>
@@ -18,7 +18,9 @@ function CardInfo ({ location }) {
         <p className="cardInfo_item-data">{location?.population}</p>
       </div>
     </div>
+    </div>
   )
 }
+
 
 export default CardInfo

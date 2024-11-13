@@ -15,4 +15,4 @@ function ResidentsList({ residents }) {
     );
 }
 
-export default ResidentsList;
+export default ResidentsList
