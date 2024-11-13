@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import useFetch from "../hooks/usefetch";
+import useFetch from "../hooks/useFetch";
 
 function ResidentCard({ url }) {
     const [resident, setResident] = useFetch(url);
@@ -8,8 +8,8 @@ function ResidentCard({ url }) {
        setResident(url);
     }, [url]) ;
     const status= resident?.status.tolowerCase()
-    const statusIcon= status ≡ 'alive'? '🟢':
-    status ≡ 'dead'? '🔴':'⚫'
+    const statusIcon = status == 'alive'? '🟢':
+    status == 'dead'? '🔴':'⚫'
 
     return (
         <div className='card'> 
