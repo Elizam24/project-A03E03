@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
-import useFetch from "./hooks/useFetch"
+import useFetch from "./useFetch"
 import CardInfo from "./components/CardInfo"
 import ResidentsList from "./components/ResidentsList"
 import Search from "./components/Search"
-
+import './App.ccs'
 
 function App() {
     const [location, setLocation] = useFetch()

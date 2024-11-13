@@ -1,10 +1,11 @@
 import { useRef, useState } from "react";
 
-function Search () {
+
+function Search ({setLocationId}) {
 const [error, setError] =useState('')
 const inputRef =useRef()
 
-const onSumit =(e) => {
+const  onSumit =(e) => {
     e.preventDefaul()
     const id =parseInt (inputRef.current.value )
 
@@ -18,8 +19,11 @@ const onSumit =(e) => {
         setTimeout(()=>{setError('')},3000)
         return
     }
+setLocationId(id)
+e.target.reset()
 }
-   return(
+}
+ return (
         <form onSubmit={onSumit} className="search">
         <input ref={inputRef} type="text" className="search_input"/>
         <button className="search_btn" >Search</button>
