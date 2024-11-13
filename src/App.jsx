@@ -13,11 +13,15 @@ function App() {
         setLocation(`https://rickandmortyapi.com/api/location/${locationId}`)
     }, [locationId])
 
+    const setLocationIdSearch = (value) => {
+        setLocationId(value)
+    }
+
     return (
         <div>
             <div className= 'hero'/>
              <div className="container"/> 
-            <Search setLocation={setLocationId} />
+            <Search setLocation={setLocationIdSearch} />
             <h2>{location?.name}</h2>
             <CardInfo location={location} />
             <ResidentsList residents={location?.residents} />

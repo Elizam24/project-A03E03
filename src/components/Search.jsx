@@ -1,12 +1,12 @@
 import { useRef, useState } from "react";
 
 
-function Search ({setLocationId}) {
+function Search ({setLocation}) {
     const [error, setError] =useState('')
     const inputRef =useRef()
 
     const  onSumit =(e) => {
-        
+
         e.preventDefaul()
         const id =parseInt (inputRef.current.value )
 
@@ -20,7 +20,7 @@ function Search ({setLocationId}) {
             setTimeout(()=>{setError('')},3000)
             return
         }
-        setLocationId(id)
+        setLocation(id)
         e.target.reset()
     }
  return (
