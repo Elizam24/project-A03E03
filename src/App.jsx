@@ -11,13 +11,8 @@ function App() {
 
 
     useEffect(() => {
-        if (data) {
-            setLocation(data);
-        }
-    }, [data]);
-
-    if (loading) return <div>Loading...</div>;
-    if (error) return <div>Error fetching location</div>;
+        setLocation(`https://rickandmortyapi.com/api/location/${locationId}`)
+    }, [locationId]);
 
     const setLocationIdSearch = (value) => {
         setLocationId(value)
