@@ -1,31 +1,32 @@
-.cardInfo{
+.cardInfo {
     max-width: 350px;
     width: 100%;
     margin: 0 auto;
     background-color: #00000050;
     border-radius: .5em;
-    padding: .1.5 em   .75em;
-    color:#fff;
+    padding: 1.5em .75em; /* Corregido el valor de padding */
+    color: #fff;
     text-align: center;
- box-shadow: 5px 5px 10px #00000000;
-  margin-bottom: .3em;
-
+    box-shadow: 5px 5px 10px #00000000;
+    margin-bottom: .3em;
 }
 
 .cardInfo-title {
-    color: var (--text)
-    margin-bottom .5em;
+    color: var(--text); /* Añadido punto y coma */
+    margin-bottom: .5em;
 }
+
 .cardInfo-container {
     display: grid;
-    grid-template-columns: repeat(3,4fr);
-    font-size: 13px
-
+    grid-template-columns: repeat(3, 4fr); /* Corregido el espacio */
+    font-size: 13px; /* Añadido punto y coma */
 }
-.cardInfo_item{
+
+.cardInfo_item {
     width: 100%;
 }
-.cardInfo_item data{
-    color:#ffffff60;
-    
-} 
+
+.cardInfo_item data {
+    color: #ffffff60;
+}
+

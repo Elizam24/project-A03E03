@@ -1,6 +1,5 @@
-.card{
-    border: 3px solid red
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-columns: repeat (3,1fr);
-    grid-template-columns:repeat (3,mimax x (300px, 1fr));
+.card {
+    border: 3px solid red; /* Añadido punto y coma */
+    grid-template-columns: repeat(3, 1fr); /* Usando la propiedad correcta */
+    grid-template-columns: repeat(3, minmax(300px, 1fr)); /* Corregido la sintaxis */
 }

@@ -7,6 +7,9 @@ function ResidentCard({ url }) {
     useEffect(() => {
        setResident(url);
     }, [url]) ;
+    const status= resident?.status.tolowerCase()
+    const statusIcon= status ≡ 'alive'? '🟢':
+    status ≡ 'dead'? '🔴':'⚫'
 
     return (
         <div className='card'> 
