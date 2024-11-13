@@ -5,8 +5,8 @@ function ResidentCard({ url }) {
     const [resident, setResident] = useFetch(url);
 
     useEffect(() => {
-        setResident(url);
-    }, [url]);
+       setResident(url);
+    }, [url]) ;
 
     return (
         <div className='card'> 
@@ -15,6 +15,7 @@ function ResidentCard({ url }) {
                 <span className='card_status'>{resident?.status}</span>
             </div>
             <h3 className='card_name'>{resident?.name}</h3>  
+             <div className="card body">
             <div className='card_info'>
                 <span className="card_info-item">
                     <span className="card_info-label">Species</span>
